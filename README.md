@@ -25,3 +25,6 @@ It builds truth tables and supports under 32 different input variables.
 - `A = B`
 - `!A + !B`
 - `~A + ~B`
+
+# Extensions
+For some more specific value selection, there are some filters (you can add your own) that you can use with ResultPrinter.
