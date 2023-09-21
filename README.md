@@ -1,6 +1,6 @@
 # Logical-Expression-Parser
 A simple console logical expression parser.
-It builds truth tables and supports under 32 different input variables.
+It builds truth tables and supports up to 32 different input variables.
 
 # Supported operations and syntax
 - Conjuncion
