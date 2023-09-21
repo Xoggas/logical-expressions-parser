@@ -4,7 +4,7 @@ public static class Program
 {
     public static void Main()
     {
-        var input = Console.ReadLine();
+        var input = GetInput();
 
         while (string.IsNullOrEmpty(input) == false)
         {
@@ -17,8 +17,14 @@ public static class Program
                 Console.WriteLine(e.Message);
             }
 
-            input = Console.ReadLine();
+            input = GetInput();
         }
+    }
+
+    private static string? GetInput()
+    {
+        Console.Write("Input: ");
+        return Console.ReadLine();
     }
 
     private static void PrintResultsForInput(string input)
@@ -29,7 +35,8 @@ public static class Program
 
         var results = evaluator.GetResults().ToArray();
 
-        Console.WriteLine(results[0].ToKeyString());
+        Console.WriteLine($"{results[0].ToKeyString()}");
         ResultPrinter.Print(results);
+        Console.WriteLine();
     }
 }
