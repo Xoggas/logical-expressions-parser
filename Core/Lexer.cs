@@ -32,7 +32,9 @@ public sealed class Lexer
             ')' => Token.RightParent,
             '>' => Token.Implication,
             '=' => Token.Equivalence,
-            _ => new Token(TokenType.Variable, CurrentSymbol)
+            _ => char.IsLetter(CurrentSymbol)
+                ? new Token(TokenType.Variable, CurrentSymbol)
+                : throw new ArgumentOutOfRangeException()
         };
 
         Advance();

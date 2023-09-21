@@ -12,9 +12,9 @@ public static class Program
             {
                 PrintResultsForInput(input);
             }
-            catch (Exception e)
+            catch
             {
-                Console.WriteLine(e.Message);
+                Console.WriteLine("Parsing error!");
             }
 
             input = GetInput();
