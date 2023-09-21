@@ -8,6 +8,7 @@ It builds truth tables and supports up to 32 different input variables.
 - Negation
 - Implication
 - Equivalence
+Brackets are also supported
 
 # Operators
 - Conjuncion - `*` or `&`
@@ -25,6 +26,7 @@ It builds truth tables and supports up to 32 different input variables.
 - `A = B`
 - `!A + !B`
 - `~A + ~B`
+- `((A | B) & C) > D) = K`
 
 # Extensions
 For some more specific value selection, there are some filters (you can add your own) that you can use with ResultPrinter.
