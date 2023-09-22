@@ -8,6 +8,7 @@ It builds truth tables and supports up to 32 different input variables.
 - Negation
 - Implication
 - Equivalence
+
 Brackets are also supported
 
 # Operators
