@@ -1,4 +1,4 @@
-))# Logical-Expression-Parser
+# Logical-Expression-Parser
 A simple console logical expression parser.
 It builds truth tables and supports up to 32 different input variables.
 
